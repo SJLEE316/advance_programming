@@ -1,6 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<% request.setCharacterEncoding("UTF-8"); %>
-<%@ page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -24,32 +22,56 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index_a.jsp" class="logo"><strong>기부</strong> &nbsp'나만의 투명한 기부 참여'</a>
+									<h2><a href="review.jsp">나의 기부내역</a></h2>
+									<ul class="icons">
+										<li><a href="Login.jsp"><span class="label">Login</span></a></li>
+										<li><a href="Login.jsp"><span class="label">Logout</span></a></li>
+									</ul>
+									
 								</header>
 
+         <!-- Section -->
+          <section style="border-top: none" class="product">
+            <div class="posts">
+              <article>
+                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <h3>단체</h3>
+				<button class="button primary" onclick="location.href='reviewing.jsp'">후기 작성하기</button>
+              </article>
 
-							<!-- Banner -->
-								<section id="banner">
-										<div class="col-12 col-2-medium">
-                                            <h4>Log IN</h4>
-											<form method="post" action="login_verify_a.jsp">
-												<div class="row gtr-uniform">
-													<div class="col-6 col-12-xsmall">
-														<input type="email" name="email" id="email" value="" placeholder="email" />
-													</div>
-													<div class="col-6 col-12-xsmall">
-														<input type="password" name="password" id="password" value="" placeholder="password" />
-													</div>
-                                                    <td colspan=2><div align="center">
-                                                        <INPUT TYPE="SUBMIT" NAME="Submit" VALUE="login">
-                                                        <INPUT TYPE="RESET" VALUE="cancle"></td>
-												</div>
-											</form>
-										</div>
-								</section>
-						</div>
-					</div>
+              <article>
+                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <h3>단체</h3>
+				<button class="button primary" onclick="location.href='reviewing.jsp'">후기 작성하기</button>
+              </article>
 
+              <article>
+                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <h3>단체</h3>
+				<button class="button primary" onclick="location.href='reviewing.jsp'">후기 작성하기</button>
+              </article>
+
+              <article>
+                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <h3>단체</h3>
+				<button class="button primary" onclick="location.href='reviewing.jsp'">후기 작성하기</button>
+              </article>
+
+              <article>
+                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <h3>단체</h3>
+				<button class="button primary" onclick="location.href='reviewing.jsp'">후기 작성하기</button>
+              </article>
+             
+              <article>
+                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <h3>단체</h3>
+				<button class="button primary" onclick="location.href='reviewing.jsp'">후기 작성하기</button>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
@@ -90,8 +112,7 @@
 							<!-- Footer -->
 						</div>
 					</div>
-
-			</div>
+					</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -99,6 +120,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+   			<script src="assets/js/apply.js"></script>
 	</body>
 </html>
